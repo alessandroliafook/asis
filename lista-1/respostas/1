@@ -1,0 +1,8 @@
+     Within a bracket expression, a collating element enclosed in `[=' and
+     `=]' is an equivalence class, standing for the sequences of characters of
+     all collating elements equivalent to that one, including itself.  (If
+     there are no other equivalent collating elements, the treatment is as if
+     the enclosing delimiters were `[.' and `.]'.)  For example, if `x' and
+     `y' are the members of an equivalence class, then `[[=x=]]', `[[=y=]]',
+     and `[xy]' are all synonymous.  An equivalence class may not= be an end-
+     point of a range.
