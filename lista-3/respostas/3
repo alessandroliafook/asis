@@ -1,0 +1,17 @@
+files/federated-network-service/.git/hooks/pre-push.sample
+files/federated-network-service/.git/hooks/pre-commit.sample
+files/federated-network-service/.git/hooks/pre-receive.sample
+files/federated-network-service/.git/hooks/prepare-commit-msg.sample
+files/federated-network-service/.git/hooks/applypatch-msg.sample
+files/federated-network-service/.git/hooks/post-update.sample
+files/federated-network-service/.git/hooks/update.sample
+files/federated-network-service/.git/hooks/pre-rebase.sample
+files/federated-network-service/.git/hooks/commit-msg.sample
+files/federated-network-service/.git/hooks/pre-applypatch.sample
+files/federated-network-service/.mvn/wrapper/maven-wrapper.properties
+files/federated-network-service/.mvn/wrapper/MavenWrapperDownloader.java
+files/federated-network-service/.mvn/wrapper/maven-wrapper.jar
+files/federated-network-service/bin/agent-scripts/ipsec-installation
+files/federated-network-service/bin/agent-scripts/config-delete-federated-network
+files/federated-network-service/bin/agent-scripts/config-create-federated-network
+files/federated-network-service/mvnw
