@@ -36,7 +36,7 @@ O sistema deverá permitir:
 - Devem ser apresentados todos os scripts necessários, bem como os procedimentos para instalação do sistema.
 
 ## Arvore de arquivos
-
+```bash
 /lp-cota
 	/files
 		conf
@@ -48,3 +48,4 @@ O sistema deverá permitir:
 	save_print.sh
 	report.sh
 	lp.sh
+```
