@@ -9,22 +9,29 @@ O consumo de papel e toner precisa ser melhor controlado, para isso você(s) pre
 
 O sistema deverá permitir:
 
-Emitir relatórios sobre o consumo de recursos por usuário por mês (recursos são o número de arquivos e o número de páginas impressas).
-Impedir que um usuário que usou além do limite de sua cota mensal, possa imprimir mais arquivos.
-Renovar a cota dos usuários a cada mês, subtraindo o que eventualmente o usuário possa ter usado a mais no mês anterior.
-O sistema deve ter uma forma de parametrizar a cota do usuário.
+- Emitir relatórios sobre o consumo de recursos por usuário por mês (recursos são o número de arquivos e o número de páginas impressas).
+
+- Impedir que um usuário que usou além do limite de sua cota mensal, possa imprimir mais arquivos, porém ele pode ultrapassar a cota acaso a impressão atual o faça.
+
+- Renovar a cota dos usuários a cada mês, subtraindo o que eventualmente o usuário possa ter usado a mais no mês anterior.
+
+- O sistema deve ter uma forma de parametrizar a cota do usuário (*arquivo de configuração*).
+
+- O sistema deve conter um arquivo onde os usuários autorizados a utlizar o sistema estão cadastrados.
 
 ### Simplificações:
 
-Vamos assumir que a impressora só pode ser usada via a execução do comando /usr/bin/lp.
-Os arquivos impressos são arquivos "texto" e que uma página corresponde a 60 linhas, ou 3.600 (60*60) caracteres, o que for maior. Ou seja, um arquivo que tem 36.000 bytes vai ocupar no mínimo 10 páginas.
-Todos os usuários têm a mesma cota.
+- Vamos assumir que a impressora só pode ser usada via a execução do comando /usr/bin/lp.
+
+- Os arquivos impressos são arquivos "texto" e que uma página corresponde a 60 linhas, ou 3.600 (60*60) caracteres, o que for maior. Ou seja, um arquivo que tem 36.000 bytes vai ocupar no mínimo 10 páginas.
+
+- Todos os usuários têm a mesma cota.
 
 ### Observações:
 
-Será gerada uma bateria de testes (a ser disponibilizada em breve) para permitir o teste automático do sistema (ou pelo menos de boa parte do sistema).
+- Será gerada uma bateria de testes (a ser disponibilizada em breve) para permitir o teste automático do sistema (ou pelo menos de boa parte do sistema).
 
 ### Apresentação da resposta:
 
-Devem ser apresentados todos os scripts necessários, bem como os procedimentos para instalação do sistema.
+- Devem ser apresentados todos os scripts necessários, bem como os procedimentos para instalação do sistema.
 
