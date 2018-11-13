@@ -1,0 +1,4 @@
+Date time user file pages status
+2018-11-10 15:54:12 luiz README.md 1 Success!
+2018-11-10 15:54:37 luiz /home/luiz/Documentos/Eclipse/eclipse-neon.tar.gz 87044 Success!
+2018-11-10 15:54:38 luiz /home/luiz/Documentos/Eclipse/eclipse-neon.tar.gz 87044 Quota exceeded!
