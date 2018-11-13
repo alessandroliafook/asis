@@ -9,4 +9,3 @@ Para instalar o sistema é necessário ter permissão de administrador do sistem
 ```
 $sudo install.sh
 ```
-
