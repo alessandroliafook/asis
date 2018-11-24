@@ -1,6 +1,6 @@
 #!/bin/bash
+#Authors: Alessandro Fook & Matheus Procópio
 
-#: << test
 while read -p "$USER@$(hostname -f): $PWD$ " CMD  
     do
         
@@ -9,9 +9,11 @@ while read -p "$USER@$(hostname -f): $PWD$ " CMD
             break 
         fi
 
-        A=$(type $CMD | grep -wc "builtin")
+        PROGRAMS=$(echo $CMD | awk -F "|" '{out=""; for(i=1;i<=NF;i++){out=out"\n"$i}; print out}' | sed 's/ //g')
 
-        if [ $A \> 0 ];
+        BUILTIN=$(type $PROGRAMS | grep -wc "builtin")
+        
+        if [ $BUILTIN \> 0 ];
         then
                 $CMD
         else
