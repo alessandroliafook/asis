@@ -8,17 +8,17 @@ while read -p "$USER@$(hostname -f): $PWD$ " CMD
         then 
             break 
         fi
-
+ 
         PROGRAMS=$(echo $CMD | awk -F "|" '{out=""; for(i=1;i<=NF;i++){out=out"\n"$i}; print out}' | sed 's/ //g')
 
         BUILTIN=$(type $PROGRAMS | grep -wc "builtin")
         
         if [ $BUILTIN \> 0 ];
         then
-                $CMD
+            $CMD
         else
             DATE=$(date '+%Y %m')
-            time --output=log -a -f "$DATE %C %U %S" $CMD;
+	    time --output=log -a -f "$DATE %C %U %S" bash -c "$CMD";
         fi
 
     done
